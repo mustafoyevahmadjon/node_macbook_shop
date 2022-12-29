@@ -59,7 +59,6 @@ router.post("/register", registerValidators, async (req, res) => {
       email: email,
       name: name,
       password: hashPass,
-      isAdmin,
       cart: { items: [] },
     });
     await user.save();
